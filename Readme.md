@@ -1,14 +1,22 @@
 
-= Todo
+# Sass.js
+
+  JavaScript implementation of Sass. Great for node.js and other
+  frameworks supporting the CommonJS module system.
+  
+## Todo
 
   * Fix nesting
-  * Function support and cross browser prefixing funcs
-  * Specs
+  * Ability to populate variables and mixins before compiling
+  * Ability to strip variables and mixins only, for use within other files
   * Mixins
-  * Literal JS ? via {}
+  * Import etc
+  * Comments
+  * Specs
+  * Literal JS via { ... }
   * Benchmarks
 
-== License 
+## License 
 
 (The MIT License)
 
