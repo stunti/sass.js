@@ -14,7 +14,6 @@
   * Support real selectors..
   * Comments
   * Specs
-  * Literal JS via { ... }
   * Benchmarks
   * Docs
 
