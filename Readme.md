@@ -16,6 +16,7 @@
   * Specs
   * Literal JS via { ... }
   * Benchmarks
+  * Docs
 
 ## License 
 
