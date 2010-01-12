@@ -21,6 +21,11 @@ describe 'Sass'
   end
   
   describe '.render()'
+    it 'should support complex selectors'
+      require('sys').p(render('selectors'))
+      assert('selectors')
+    end
+  
     describe '{...}'
       it 'should have access to variables'
         assert('literal')
