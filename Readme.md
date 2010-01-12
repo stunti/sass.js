@@ -4,6 +4,14 @@
   JavaScript implementation of Sass. Great for node.js and other
   frameworks supporting the CommonJS module system.
   
+## Testing
+
+Update Git submodules and execute:
+  $ make test
+
+or
+  $ node spec/node.js
+  
 ## Todo
 
   * Fix nesting
