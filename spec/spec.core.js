@@ -31,6 +31,13 @@ describe 'Sass'
           assert('properties.nested')
         end
       end
+      
+      describe 'when invalid'
+        it 'should throw an error'
+          // TODO: specific errors
+          -{ assert('properties.invalid') }.should.throw_error
+        end
+      end
     end
     
     describe 'key: val'
