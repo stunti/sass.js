@@ -13,19 +13,6 @@ or
 or
   $ jspec --node
   
-## Todo
-
-  * Fix nesting
-  * Ability to populate variables and mixins before compiling
-  * Ability to strip variables and mixins only, for use within other files
-  * Mixins
-  * Import etc
-  * Support real selectors..
-  * Comments
-  * Specs
-  * Benchmarks
-  * Docs
-
 ## License 
 
 (The MIT License)
