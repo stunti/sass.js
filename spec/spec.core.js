@@ -47,7 +47,7 @@ describe 'Sass'
           // TODO: specific errors
           try { assert('properties.invalid') }
           catch (e) {
-            e.should.eql 'ParseError: near line 1; properties must be nested within a selector'
+            e.should.eql 'ParseError: on line 1; properties must be nested within a selector'
           }
         end
       end
@@ -63,7 +63,7 @@ describe 'Sass'
           it 'should throw an error'
             try { assert('properties.nested.invalid') }
             catch (e) {
-              e.should.eql 'ParseError: near line 3; invalid indentation, to much nesting'  
+              e.should.eql 'ParseError: on line 3; invalid indentation, to much nesting'  
             }
           end
         end
