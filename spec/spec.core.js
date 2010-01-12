@@ -21,6 +21,12 @@ describe 'Sass'
   end
   
   describe '.render()'
+    describe '{...}'
+      it 'should have access to variables'
+        assert('literal')
+      end  
+    end
+    
     describe ':key val'
       it 'should define a property'
         assert('properties')
