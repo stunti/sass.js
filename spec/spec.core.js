@@ -47,7 +47,7 @@ describe 'Sass'
           // TODO: specific errors
           try { assert('properties.invalid') }
           catch (e) {
-            e.should.eql 'ParseError: near line 1; property must be nested within a selector'
+            e.should.eql 'ParseError: near line 1; properties must be nested within a selector'
           }
         end
       end
