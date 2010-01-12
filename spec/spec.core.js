@@ -35,6 +35,7 @@ describe 'Sass'
     
     describe 'key: val'
       it 'should define a variable'
+        assert('variables')
       end
     end
   end
