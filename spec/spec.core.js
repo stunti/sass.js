@@ -54,6 +54,17 @@ describe 'Sass'
       it 'should define a variable'
         assert('variables')
       end
+      
+      describe 'when nested'
+        describe 'incorrectly'
+          it 'should throw an error'
+            try { assert('properties.nested.invalid') }
+            catch (e) {
+              e.should.eql 'ParseError: near line 3; invalid indentation, to much nesting'  
+            }
+          end
+        end
+      end
     end
   end
 end
