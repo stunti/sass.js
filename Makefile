@@ -1,6 +1,6 @@
 
 all: test
 	
-test: spec/rhino.js
-	@jspec run --rhino
+test: spec/node.js
+	@node spec/node.js
 	
