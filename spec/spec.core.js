@@ -25,6 +25,13 @@ describe 'Sass'
       assert('selectors')
     end
     
+    describe '// ...'
+      it 'should be a sass-specific comment'
+        require('sys').puts(render('comment'))
+        assert('comment')
+      end
+    end
+    
     describe '&'
       it 'should continue a selector'
         require('sys').puts(render('continuation'))
