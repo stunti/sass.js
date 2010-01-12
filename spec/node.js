@@ -17,8 +17,6 @@ readFile = function(path) {
   return result
 }
 
-print(sass.render(readFile('examples/style.sass')))
-
 JSpec
   .exec('spec/spec.core.js')
   .run({ reporter: JSpec.reporters.Terminal })
