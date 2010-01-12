@@ -24,6 +24,13 @@ describe 'Sass'
     it 'should support complex selectors'
       assert('selectors')
     end
+    
+    describe '&'
+      it 'should continue a selector'
+        require('sys').puts(render('continuation'))
+        assert('continuation')
+      end
+    end
   
     describe '{...}'
       it 'should have access to variables'
