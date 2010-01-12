@@ -42,10 +42,13 @@ describe 'Sass'
         end
       end
       
-      describe 'when invalid'
+      describe 'when at the top level'
         it 'should throw an error'
           // TODO: specific errors
-          -{ assert('properties.invalid') }.should.throw_error
+          try { assert('properties.invalid') }
+          catch (e) {
+            e.should.eql 'ParseError: near line 1; property must be nested within a selector'
+          }
         end
       end
     end
