@@ -10,3 +10,10 @@ body ul li {
 body ul li a {
   color: #fff;
 }
+body form label {
+  display: none;
+}
+
+a {
+  color: #cc0000;
+}
