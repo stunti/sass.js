@@ -65,6 +65,12 @@ describe 'Sass'
       end
     end
     
+    describe '=:key val'
+      it 'should expand to -{moz, webkit}-border-radius'
+        assert('properties.expand')
+      end
+    end
+    
     describe '!key = val'
       it 'should define a variable'
         assert('variables.regular')
@@ -85,12 +91,6 @@ describe 'Sass'
             }
           end
         end
-      end
-    end
-    
-    describe ':border-radius'
-      it 'should expand to -{moz, webkit}-border-radius'
-        assert('properties.unofficial')
       end
     end
     
