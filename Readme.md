@@ -8,9 +8,10 @@
 
 Update Git submodules and execute:
   $ make test
-
 or
   $ node spec/node.js
+or
+  $ jspec --node
   
 ## Todo
 
