@@ -31,7 +31,7 @@ describe 'Sass'
       end
     end
     
-    describe '&'
+    describe '& ...'
       it 'should continue a selector'
         require('sys').puts(render('continuation'))
         assert('continuation')
