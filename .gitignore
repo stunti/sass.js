@@ -1,0 +1,6 @@
+*.cache
+*.log
+.DS_Store
+pkg
+build
+bin
