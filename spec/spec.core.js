@@ -27,7 +27,6 @@ describe 'Sass'
     
     describe '// ...'
       it 'should be a sass-specific comment'
-        require('sys').puts(render('comment'))
         assert('comment')
       end
     end
