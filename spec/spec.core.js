@@ -2,7 +2,15 @@
 describe 'Sass'
   before
     render = function(path, options) {
-      sass.render(fixture(path + '.sass'), options)
+      return sass.render(fixture(path + '.sass'), options)
+    }
+    
+    expected = function(path) {
+      return fixture(path + '.css')
+    }
+    
+    assert = function(path, options) {
+      render(path, options).should.eql expected(path)
     }
   end
   
@@ -13,6 +21,21 @@ describe 'Sass'
   end
   
   describe '.render()'
+    describe ':key val'
+      it 'should define a property'
+        assert('properties')
+      end
+      
+      describe 'when nested'
+        it 'should traverse correctly'
+          assert('properties.nested')
+        end
+      end
+    end
     
+    describe 'key: val'
+      it 'should define a variable'
+      end
+    end
   end
 end

@@ -19,5 +19,5 @@ readFile = function(path) {
 
 JSpec
   .exec('spec/spec.core.js')
-  .run({ reporter: JSpec.reporters.Terminal })
+  .run({ reporter: JSpec.reporters.Terminal, fixturePath: 'spec/fixtures' })
   .report()
