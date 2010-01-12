@@ -1,0 +1,7 @@
+body input.field#email ~ label {
+  display: none;
+}
+body form:nth-child(1) legend {
+  font-size: 15px;
+}
+
