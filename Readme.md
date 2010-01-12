@@ -4,6 +4,14 @@
   JavaScript implementation of Sass. Great for node.js and other
   frameworks supporting the CommonJS module system.
   
+## Usage
+
+With sass.js in the load path you can then use:
+
+    var sass = require('sass')
+    sass.render('... string of sass ...')
+    // => '... string of css ...'
+    
 ## Testing
 
 Update Git submodules and execute:
