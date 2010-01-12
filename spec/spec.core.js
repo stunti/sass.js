@@ -87,5 +87,12 @@ describe 'Sass'
         end
       end
     end
+    
+    describe ':border-radius'
+      it 'should expand to -{moz, webkit}-border-radius'
+        assert('properties.unofficial')
+      end
+    end
+    
   end
 end
