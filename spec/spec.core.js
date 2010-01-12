@@ -41,7 +41,7 @@ describe 'Sass'
     describe '{...}'
       it 'should have access to variables'
         assert('literal')
-      end  
+      end
     end
     
     describe ':key val'
@@ -62,6 +62,12 @@ describe 'Sass'
             e.message.should.eql 'ParseError: on line 1; properties must be nested within a selector'
           }
         end
+      end
+    end
+    
+    describe '!key = val'
+      it 'should define a variable'
+        assert('variables.regular')
       end
     end
     
