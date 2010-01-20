@@ -15,11 +15,11 @@ With sass.js in the load path you can then use:
 ## Testing
 
 Update Git submodules and execute:
-  $ make test
+    $ make test
 or
-  $ node spec/node.js
+    $ node spec/node.js
 or
-  $ jspec --node
+    $ jspec --node
   
 ## License 
 
