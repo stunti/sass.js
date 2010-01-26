@@ -27,9 +27,9 @@ compiles to
       
 ## Variables
 
-   !red = #ff0000
-   body
-     :color !red
+    !red = #ff0000
+    body
+      :color !red
      
 and
 
