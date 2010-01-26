@@ -12,6 +12,84 @@ With sass.js in the load path you can then use:
     sass.render('... string of sass ...')
     // => '... string of css ...'
     
+## Comments
+
+    // foo
+    body
+      // bar
+      a
+        :color #fff
+        
+compiles to
+
+    body a {
+      color: #fff;}
+      
+## Variables
+
+   !red = #ff0000
+   body
+     :color !red
+     
+and
+
+    red: #ff0000
+    body
+      :color !red
+
+compile to
+
+    body {
+      color: #ff0000;}
+
+## Selector Continuations
+
+    a
+      :color #fff
+      &:hover
+        :color #000
+      &.active
+        :background #888
+        &:hover
+          :color #fff
+          
+compiles to
+
+    a {
+      color: #fff;}
+
+    a:hover {
+      color: #000;}
+
+    a.active {
+      background: #888;}
+
+    a.active:hover {
+      color: #fff;}
+      
+## Literal JavaScript
+
+    type: "solid"
+    size: 1
+    input
+      :border { parseInt(size) + 1 }px {type} #000
+      
+compiles to
+
+    input {
+      border: 2px "solid" #000;}
+      
+## Property Expansion
+
+    div
+      =border-radius 5px
+      
+compiles to
+
+    div {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;}
+    
 ## Testing
 
 Update Git submodules and execute:
