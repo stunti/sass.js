@@ -31,12 +31,6 @@ compiles to
     body
       :color !red
      
-and
-
-    red: #ff0000
-    body
-      :color !red
-
 compile to
 
     body {
