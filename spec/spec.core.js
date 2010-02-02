@@ -54,6 +54,15 @@ describe 'Sass'
         it 'should traverse correctly'
           assert('properties.nested')
         end
+        
+        describe 'incorrectly'
+          it 'should throw an error'
+            try { assert('properties.nested.invalid') }
+            catch (e) {
+              e.message.should.eql 'ParseError: on line 3; invalid indentation, to much nesting'
+            }
+          end
+        end
       end
       
       describe 'when at the top level'
@@ -75,23 +84,6 @@ describe 'Sass'
     describe '!key = val'
       it 'should define a variable'
         assert('variables.regular')
-      end
-    end
-    
-    describe 'key: val'
-      it 'should define a variable'
-        assert('variables')
-      end
-      
-      describe 'when nested'
-        describe 'incorrectly'
-          it 'should throw an error'
-            try { assert('properties.nested.invalid') }
-            catch (e) {
-              e.message.should.eql 'ParseError: on line 3; invalid indentation, to much nesting'
-            }
-          end
-        end
       end
     end
     
