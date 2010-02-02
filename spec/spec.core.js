@@ -22,7 +22,6 @@ describe 'Sass'
   
   describe '.render()'
     it 'should support complex selectors'
-      require('sys').puts(render('selectors'))
       assert('selectors')
     end
     
