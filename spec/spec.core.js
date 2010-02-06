@@ -84,6 +84,12 @@ describe 'Sass'
         assert('variables.regular')
       end
     end
+    
+    describe 'key: val'
+      it 'should define a variable'
+        assert('variables.alternate')
+      end
+    end
   end
   
   describe '.collect()'
