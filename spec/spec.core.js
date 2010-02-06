@@ -84,6 +84,12 @@ describe 'Sass'
         assert('variables.regular')
       end
     end
-    
+  end
+  
+  describe '.collect()'
+    it 'should return variables defined'
+      var collected = sass.collect(fixture('collect.sass'))
+      collected.variables.should.eql { red: '#ff0000', black: '#000' }
+    end
   end
 end
