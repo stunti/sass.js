@@ -12,6 +12,9 @@ With sass.js in the load path you can then use:
     sass.render('... string of sass ...')
     // => '... string of css ...'
     
+    sass.collect('... string of sass ...')
+    // => { selectors: [...], variables: { ... }}
+    
 ## Comments
 
     // foo
