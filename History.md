@@ -1,4 +1,10 @@
 
+0.2.0 / 2010-02-05
+==================
+
+  * Added alternate variable syntax back ("var: val")
+  * Added a method to extract variables. Closes #3
+
 0.1.0 / 2010-02-05
 ==================
 
