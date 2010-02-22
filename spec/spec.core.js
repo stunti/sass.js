@@ -96,6 +96,13 @@ describe 'Sass'
     it 'should create a mixin'
       assert('mixin')
     end
+    
+    describe 'when the mixin does not exist'
+      try { assert('mixin.undefined') }
+      catch (e) {
+        e.message.should.eql 'ParseError: on line 2; mixin `large\' does not exist'
+      }
+    end
   end
   
   describe '.collect()'
