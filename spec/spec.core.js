@@ -92,10 +92,29 @@ describe 'Sass'
     end
   end
   
+  describe '+mixin'
+    it 'should create a mixin'
+      assert('mixin')
+    end
+    
+    describe 'when the mixin does not exist'
+      try { assert('mixin.undefined') }
+      catch (e) {
+        e.message.should.eql 'ParseError: on line 2; mixin `large\' does not exist'
+      }
+    end
+  end
+  
   describe '.collect()'
     it 'should return variables defined'
       var collected = sass.collect(fixture('collect.sass'))
       collected.variables.should.eql { red: '#ff0000', black: '#000' }
+    end
+    
+    it 'should return mixins defined'
+      var collected = sass.collect(fixture('mixin.sass'))
+      collected.mixins.should.have_property 'large'
+      collected.mixins.should.have_property 'striped'
     end
   end
 end
