@@ -1,4 +1,6 @@
-a {
-  display: block;
-  width: 100%;
-  color: #fff;}
+table {
+  border: none;}
+table tr {
+  background: #fff;}
+table tr:odd {
+  background: #000;}
