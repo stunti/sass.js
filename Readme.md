@@ -127,6 +127,10 @@ or
     $ node spec/node.js
 or
     $ jspec --node
+    
+## More Information
+
+* Featured in [Advanced JavaScript e-book](http://www.dev-mag.com/2010/02/18/advanced-javascript/) for only $4
   
 ## License 
 
