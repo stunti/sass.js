@@ -92,6 +92,32 @@ compiles to
     div {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;}
+      
+## Mixins
+
+     +large
+       :font-size 15px
+     +striped
+       tr
+         :background #fff
+         +large
+         &:odd
+           :background #000
+     table
+       +striped
+       :border none
+       
+compiles to
+
+    table {
+      border: none;}
+    table tr {
+      background: #fff;}
+    table tr {
+      font-size: 15px;}
+    table tr:odd {
+      background: #000;}
+    
     
 ## Testing
 
