@@ -110,5 +110,11 @@ describe 'Sass'
       var collected = sass.collect(fixture('collect.sass'))
       collected.variables.should.eql { red: '#ff0000', black: '#000' }
     end
+    
+    it 'should return mixins defined'
+      var collected = sass.collect(fixture('mixin.sass'))
+      collected.mixins.should.have_property 'large'
+      collected.mixins.should.have_property 'striped'
+    end
   end
 end
