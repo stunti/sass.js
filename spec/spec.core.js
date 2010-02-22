@@ -92,6 +92,12 @@ describe 'Sass'
     end
   end
   
+  describe '+mixin'
+    it 'should create a mixin'
+      assert('mixin')
+    end
+  end
+  
   describe '.collect()'
     it 'should return variables defined'
       var collected = sass.collect(fixture('collect.sass'))
