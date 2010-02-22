@@ -94,7 +94,6 @@ describe 'Sass'
   
   describe '+mixin'
     it 'should create a mixin'
-      require('sys').puts(render('mixin'))
       assert('mixin')
     end
   end
