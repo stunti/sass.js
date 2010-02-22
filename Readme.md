@@ -13,7 +13,7 @@ With sass.js in the load path you can then use:
     // => '... string of css ...'
     
     sass.collect('... string of sass ...')
-    // => { selectors: [...], variables: { ... }}
+    // => { selectors: [...], variables: { ... }, mixins: { ... }}
     
 ## Comments
 
