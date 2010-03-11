@@ -1,8 +1,15 @@
 
 # Sass.js
 
-  JavaScript implementation of Sass. Great for node.js and other
+  JavaScript implementation of Sass. Great for **node.js** and other
   frameworks supporting the CommonJS module system.
+  
+## Installation
+
+  Install the [Kiwi package manager for nodejs](http://github.com/visionmedia/kiwi)
+  and run:
+  
+      $ kiwi -v install sass
   
 ## Usage
 
