@@ -21,6 +21,20 @@ describe 'Sass'
   end
   
   describe '.render()'
+    describe 'with "cache" enabled'
+      describe 'without "filename"'
+        it 'should throw an error'
+          -{ assert('selectors', { cache: true }) }.should.throw_error 'filename option must be passed when cache is enabled'
+        end
+      end
+      
+      describe 'with "filename"'
+        it 'should still work'
+          assert('selectors', { cache: true, filename: 'style.sass' })
+        end
+      end
+    end
+  
     it 'should support complex selectors'
       assert('selectors')
     end
