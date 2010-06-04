@@ -1,5 +1,6 @@
 {
   "name": "Sass",
   "description": "Syntactically Awesome Stylesheets (compiles to css)",
+  "author": "TJ Holowaychuk <tj@vision-media.ca",
   "version": "0.4.0"
 }
