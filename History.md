@@ -1,4 +1,9 @@
 
+0.4.2 / 2010-06-21
+==================
+
+  * Added lib directory to package.json for npm to work
+
 0.4.1 / 2010-06-21
 ==================
 
